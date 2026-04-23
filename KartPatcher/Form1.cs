@@ -138,5 +138,15 @@ namespace KartPatcher
             Form2 helpWindow = new Form2();
             helpWindow.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titleIdBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

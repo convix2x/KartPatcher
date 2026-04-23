@@ -42,6 +42,7 @@
             titleIdBox = new TextBox();
             label5 = new Label();
             button2 = new Button();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -100,6 +101,7 @@
             // 
             resources.ApplyResources(titleIdBox, "titleIdBox");
             titleIdBox.Name = "titleIdBox";
+            titleIdBox.TextChanged += titleIdBox_TextChanged;
             // 
             // label5
             // 
@@ -113,10 +115,16 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label6);
             Controls.Add(button2);
             Controls.Add(label5);
             Controls.Add(titleIdBox);
@@ -134,6 +142,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,5 +162,6 @@
         private TextBox titleIdBox;
         private Label label5;
         private Button button2;
+        private Label label6;
     }
 }
