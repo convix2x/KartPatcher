@@ -92,7 +92,7 @@ namespace KartPatcher
                     else
                     {
                         stepStatus.Text = "Title ID not found.";
-                        MessageBox.Show($"Could not find directory: {detectedGamePath}");
+                        MessageBox.Show($"Could not find directory: {detectedGamePath}. Do you have webman MOD installed?");
                     }
                 }
             }
