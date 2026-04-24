@@ -36,17 +36,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(7, 0);
             label1.Name = "label1";
-            label1.Size = new Size(115, 15);
+            label1.Size = new Size(218, 30);
             label1.TabIndex = 0;
             label1.Text = "List of valid Title ID's";
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(12, 27);
+            richTextBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            richTextBox1.Location = new Point(12, 33);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(204, 227);
+            richTextBox1.Size = new Size(303, 132);
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             richTextBox1.TextChanged += richTextBox1_TextChanged;
@@ -55,7 +57,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(228, 266);
+            ClientSize = new Size(328, 179);
             Controls.Add(richTextBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -63,6 +65,7 @@
             MinimizeBox = false;
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }
