@@ -65,6 +65,7 @@
             // label2
             // 
             resources.ApplyResources(label2, "label2");
+            label2.ForeColor = SystemColors.AppWorkspace;
             label2.Name = "label2";
             // 
             // progressBar1
@@ -86,6 +87,7 @@
             // 
             resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
